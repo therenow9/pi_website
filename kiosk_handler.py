@@ -21,7 +21,7 @@ import subprocess;
 deploy_url = "https://www.pendantautomation.com/";
 
 while True:
-    v = subprocess.Popen("chromium-browser --kiosk " + deploy_url, shell=True);
+    v = subprocess.Popen("chromium-browser --kiosk --app=" + deploy_url, shell=True);
     # open up browser in kiosk mode
     v.wait();
     # wait for program to close then reopen
