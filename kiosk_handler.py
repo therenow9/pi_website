@@ -13,6 +13,7 @@ Last Updated:7/29/20
 Changes:N/A
 
 '''
+'''
 # Imports
 
 import subprocess;
@@ -21,7 +22,7 @@ import subprocess;
 deploy_url = "https://www.pendantautomation.com/";
 
 while True:
-    v = subprocess.Popen("chromium-browser --kiosk --app=" + deploy_url, shell=True);
+    v = subprocess.Popen("chromium-browser --fast --fast-start  --app=" + deploy_url, shell=True);
     # open up browser in kiosk mode
     v.wait();
     # wait for program to close then reopen
