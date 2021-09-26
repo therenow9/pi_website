@@ -19,6 +19,7 @@ Changes:N/A
 import subprocess;
 # Deployment Variables
 deploy_url = "https://www.pendantautomation.com/";
+#this is to be replaced with an ip address with data for the warehouse
 
 # code
 while True:
